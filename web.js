@@ -6,6 +6,7 @@ app.get('/', function(request, response) {
 	var fs = require('fs');
 	var out = fs.readFile('index.html', 'utf8');
 	response.send(out);
+	response.send('test');
   //response.send('Hello World 2!');
 });
 
